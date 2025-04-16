@@ -19,3 +19,8 @@ uvicorn main:app --reload
 
 Note the swagger endpoint is located at http://127.0.0.1:8000/docs
 
+## Docker
+
+docker build -t backend-agent . 
+
+docker run -d -p 8000:8000 backend-agent
